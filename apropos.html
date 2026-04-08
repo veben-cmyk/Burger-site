@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+    body {
+        font-family: 'Poppins' sans-serif;
+    }
+    </style>
+    </head>
+
+    <body class="bg-[#0f172a] text-white">
+
+</head>
+
+<body>
+
+    <header class="flex items-center justify-between px-8 py-4 border-b border-gray-700">
+        <div class="flex items-center gap-2 text-xl font-bold">
+            🍔BurgerHouse
+        </div>
+
+        <nav class="hidden md:flex gap-8 text-gray-300">
+                <a href="index.html" class="bg-[#0f172a] px-5 py-2 rounded-lg hover:bg-orange-600 transition">Accueil </a>
+                <a href="menu.html" class="bg-[#0f172a] px-5 py-2 rounded-lg hover:bg-orange-600 transition">Menu</a>
+                <a href="apropos.html" class="bg-[#0f172a] px-5 py-2 rounded-lg hover:bg-orange-600 transition">À propos</a>
+                <a href="" class="bg-[#0f172a] px-5 py-2 rounded-lg hover:bg-orange-600 transition">Contact</a>
+        </nav>
+
+        <button class="hidden md:block bg-orange-500 px-5 py-2 rounded-lg hover:bg-orange-600 transition">
+            Commander
+        </button>
+
+    <!-- 🍔 BOUTON BURGER (mobile uniquement) -->
+    <!-- 👉 c'est lui qui déclenche le menu -->
+        <button onclick="toggleMenu()" class="md:hidden text-3xl">
+            ☰
+        </button>
+
+    </header>
+
+    
+
+    <section class="text-center py-12 border-solid border-b-2 border-gray-700">
+            <h1 class="inline-block text-4xl font-bold text-orange-500 pb-2 border-b-2 border-solid">À Propos de Nous </h1>
+            <div class="w-32 h1 bg-orange-500 mx-auto mb-6"></div>
+            <p class="text-white-400 text-xl pt-4 ">
+                Bienvenue chez Burgerhouse, votre destination pour les meilleurs burgers gourmets. <br>
+                Nous sommes passionnés par la qualité et le goût.
+            </p>
+    </section> 
+    
+    <!-- IMAGE -->
+            <div class="max-w-4xl mx-auto mb-12 mt-10">
+                <img src="images/team.jpeg"class="rounded-xl border border-orange-500 shadow-lg"alt="équipe burger">
+            </div>
+
+    <!-- HISTOIRE + VALEURS -->
+        <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto text-left text-center my-10">
+
+    <!-- HISTOIRE -->
+            <div>
+                <h3 class="text-2xl font-semibold text-white mb-3 border-b border-orange-500 inline-block pb-1">
+                    Notre Histoire
+                </h3>
+
+                <p class="text-gray-300 mt-4">
+                    Fondé en 2010, BurgerHouse est né de l'amour pour les burgers faits maison.
+                </p>
+
+                <p class="text-gray-400 mt-3">
+                    Nous utilisons des <span class="italic">ingrédients frais et locaux</span>
+                    pour créer des recettes uniques.
+                </p>
+            </div>
+
+    <!-- VALEURS -->
+            <div>
+                <h3 class="text-2xl font-semibold text-white mb-3 border-b border-orange-500 inline-block pb-1">
+                    Nos Valeurs
+                </h3>
+
+                <p class="text-gray-300 mt-4">
+                    Qualité, fraîcheur et service sont au cœur de notre mission.
+                </p>
+
+                <p class="text-gray-400 mt-3 italic">
+                    Nous croyons en une expérience savoureuse et conviviale pour tous nos clients.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>
